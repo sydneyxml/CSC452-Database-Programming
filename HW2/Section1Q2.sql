@@ -1,0 +1,10 @@
+--Ximan Liu
+--CSC 452
+--Section1Q2
+
+
+SET SERVEROUTPUT ON;
+BEGIN
+DBMS_OUTPUT.PUT_LINE('My PL/SQL Program Works');
+END;
+/

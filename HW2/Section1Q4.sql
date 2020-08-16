@@ -1,0 +1,28 @@
+--Ximan Liu
+--CSC 452
+--Section1Q4
+
+SET SERVEROUTPUT ON;
+VARIABLE n NUMBER
+ACCEPT e_n NUMBER PROMPT 'Enter a number:'
+EXECUTE :n := &e_n  
+BEGIN
+DECLARE
+a NUMBER(3);
+b NUMBER(3);
+BEGIN
+IF :n = 0 THEN
+DBMS_OUTPUT.PUT_LINE('null');
+ELSE
+a := :n;
+b := MOD(a, 2);
+IF b = 0 THEN          
+DBMS_OUTPUT.PUT_LINE('ENTERED NUMBER '|| a ||' is even');
+ELSE
+DBMS_OUTPUT.PUT_LINE('ENTERED NUMBER '|| a ||' is odd');
+END IF;
+END IF;
+END;
+END;
+/
+
